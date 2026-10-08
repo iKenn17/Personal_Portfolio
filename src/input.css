@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@source "../view/**/*.{html,js}";
+
+@theme {
+    --font-sans: "Montserrat", sans-serif;
+}
