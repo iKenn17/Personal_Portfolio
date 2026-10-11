@@ -16,27 +16,82 @@
         <ul class="flex gap-8 text-xs font-semibold items-center text-white list-none">
             <li><a href="#about" class="nav-link inline-block pb-2 border-b-2 border-teal-500 text-teal-500 transition duration-300">ABOUT ME</a></li>
             <li><a href="#education" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">EDUCATION</a></li>
-            <li><a href="#skills" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">SKILLS</a></li>
-            <li><a href="#galleries" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">GALLERIES</a></li>
+            <li><a href="#tech_stacks" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">TECH STACKS</a></li>
+            <li><a href="#galleries" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">PROJECTS</a></li>
+            <li><a href="#contacts" class="nav-link inline-block pb-2 border-b-2 border-transparent text-white transition duration-300">CONTACTS</a></li>
         </ul>
     </nav>
 
-    <section class="w-full">
-        <div class="flex justify-center gap-10 my-10">
-            <img src="..\assets\me.jpg" alt="my picture" class="w-64 rounded-full">
-            <div class="flex flex-col justify-center">
-                <h1 class="font-montserrat font-bold text-4xl text-white">Gleianne Kenn Suratos</h1>
-                <p class="text-white">BSIT | Full Stack Web Developer | Software Developer</p>
-                <div class="my-8">
-                    <p class="text-xs text-white">Calamansi Street, Coral, Mapandan, Pangasinan</p>
-                    <p class="text-xs text-white">Studies at Urdaneta City University<br></br></p>
-                    <p class="text-xs text-white">Hobbies:</p>
-                    <ul class="list-disc text-xs text-white pl-5 marker:text-white">
-                        <li class="list">Playing Video Games(Valorant, CS2, League of Legends, etc..)</li>
-                        <li class="list">Watch Movies, Anime, and K-drama Series</li>
-                        <li class="list">Listen to Music</li>
-                        <li class="list">Read Manhwa and Manga</li>
-                    </ul>
+    <section class="w-[85%] lg:w-[65%] mx-auto my-12">
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+            <!-- Profile Avatar with glowing border and status pill -->
+            <div class="relative shrink-0 group">
+                <div class="p-1 rounded-full bg-linear-to-tr from-teal-500 via-gray-400 to-teal-400 shadow-xl shadow-teal-500/10">
+                    <img src="../assets/me.jpg" alt="Gleianne Kenn Suratos" class="w-56 h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-black transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <!-- Availability indicator badge -->
+                <div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap bg-neutral-900 border border-gray-700/80 px-3.5 py-1 rounded-full flex items-center gap-2 shadow-lg">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-[11px] font-medium text-gray-300">Open to Opportunities</span>
+                </div>
+            </div>
+
+            <!-- Intro Content -->
+            <div class="flex flex-col text-center lg:text-left items-center lg:items-start">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold tracking-wider uppercase mb-3">
+                    👋 Welcome to my portfolio
+                </div>
+
+                <h1 class="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+                    Gleianne Kenn <span class="text-teal-400">Suratos</span>
+                </h1>
+
+                <p class="text-sm sm:text-base text-gray-300 font-medium mt-2">
+                    BSIT <span class="text-teal-500">•</span> Full Stack Web Developer <span class="text-teal-500">•</span> Software Developer
+                </p>
+
+                <!-- Location & Studies Badges -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 mt-4 text-xs text-gray-300">
+                    <div class="flex items-center gap-2 bg-neutral-900/80 border border-gray-700 px-3 py-1.5 rounded-lg">
+                        <span class="text-teal-400"></span>
+                        <span>Calamansi St., Coral, Mapandan, Pangasinan</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-neutral-900/80 border border-gray-700 px-3 py-1.5 rounded-lg">
+                        <span class="text-teal-400"></span>
+                        <span>Studies at Urdaneta City University</span>
+                    </div>
+                </div>
+
+                <!-- Hobbies Section as interactive chips -->
+                <div class="mt-5 w-full">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Interests & Hobbies</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2 text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-gray-700 text-gray-300 flex items-center gap-1.5 hover:border-teal-400 hover:text-white transition duration-200 cursor-pointer">
+                             Video Games (Valorant, CS2, LoL)
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-gray-700 text-gray-300 flex items-center gap-1.5 hover:border-teal-400 hover:text-white transition duration-200 cursor-pointer">
+                             Movies, Anime & K-drama
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-gray-700 text-gray-300 flex items-center gap-1.5 hover:border-teal-400 hover:text-white transition duration-200 cursor-pointer">
+                             Music
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-gray-700 text-gray-300 flex items-center gap-1.5 hover:border-teal-400 hover:text-white transition duration-200 cursor-pointer">
+                             Manhwa & Manga
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Call to action buttons -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 mt-6 pt-1">
+                    <a href="#about" class="px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wider bg-teal-500 text-black hover:bg-teal-400 transition-all duration-300 shadow-md shadow-teal-500/20 hover:-translate-y-0.5">
+                        DISCOVER MY STORY
+                    </a>
+                    <a href="#tech_stacks" class="px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wider border border-gray-600 bg-neutral-900/60 text-white hover:border-white hover:bg-neutral-900 transition-all duration-300 hover:-translate-y-0.5">
+                        EXPLORE TECH STACKS
+                    </a>
                 </div>
             </div>
         </div>
@@ -44,14 +99,40 @@
 
     <hr class="w-[75%] mx-auto border-gray-600">
 
-    <section class="w-[65%] mx-auto">
-        <div class="flex flex-col gap-8 my-8">
+    <section id="about" class="w-[65%] mx-auto">
+        <div class="flex my-8">
             <h1 class="text-xl font-semibold text-white">About Me</h1>
-            <p class="text-white">Hello, I am Gleianne Kenn Suratos, 21 years old, from Coral, Mapandan, Pangasinan. I am a 3rd Year college student at Urdaneta City University
-                currently taking Bachelor of Science in Information Technology. I chose this program because since when i was still a child, I like playing computer games, 
-                fix devices and, make diy things. I am proud to chose BSIT because I want to create or build a fully working website and application in the future, because 
-                I want to repay my parent's sacrifices.
+        </div>
+
+        <div class="border border-gray-600 rounded-xl p-6 sm:p-8 flex flex-col gap-5 hover:bg-neutral-900 hover:border-white cursor-pointer my-8">
+            <p class="text-white text-base leading-relaxed">
+                Hello! I am <span class="font-semibold text-white">Gleianne Kenn Suratos</span>, a 21-year-old 3rd-year college student taking <span class="font-semibold text-white">Bachelor of Science in Information Technology</span> at Urdaneta City University, residing in Coral, Mapandan, Pangasinan.
             </p>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                My passion for technology began during my childhood—spending hours playing computer games, repairing devices, and tinkering with DIY projects. That natural curiosity inspired me to pursue BSIT, where I specialize in Full Stack Web and Software Development.
+            </p>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                I am driven to create fully functional, high-performance websites and software applications that solve real problems. Above all, every skill I develop and project I build is fueled by dedication and the ambition to honor and repay my parents' sacrifices.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-gray-700/60 mt-1">
+                <div class="bg-black/50 border border-gray-700 rounded-lg p-3 text-center">
+                    <p class="text-xs text-gray-400">Current Status</p>
+                    <p class="text-sm font-semibold text-white">3rd Year BSIT</p>
+                </div>
+                <div class="bg-black/50 border border-gray-700 rounded-lg p-3 text-center">
+                    <p class="text-xs text-gray-400">University</p>
+                    <p class="text-sm font-semibold text-white">UCU</p>
+                </div>
+                <div class="bg-black/50 border border-gray-700 rounded-lg p-3 text-center">
+                    <p class="text-xs text-gray-400">Specialization</p>
+                    <p class="text-sm font-semibold text-white">Full Stack Dev</p>
+                </div>
+                <div class="bg-black/50 border border-gray-700 rounded-lg p-3 text-center">
+                    <p class="text-xs text-gray-400">Location</p>
+                    <p class="text-sm font-semibold text-white">Pangasinan, PH</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -62,23 +143,23 @@
             <h1 class="text-xl font-semibold text-white">Education</h1>
         </div>
 
-        <div class="flex flex-col gap-8 my-8">
-            <div class="flex flex-row gap-8 items-center">
-                <img src="../assets/mnhs-logo.png" alt="MNHS Logo" class="w-12 h-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-4 items-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
+                <img src="../assets/mnhs-logo.png" alt="MNHS Logo" class="w-12 h-12 shrink-0">
                 <p class="text-white text-sm">
                     Mapandan National High School (A.Y 2017-2021) <br> 
                     Junior High School<br>
                 </p>
             </div>
-            <div class="flex flex-row gap-8 items-center">
-                <img src="../assets/mnhs-logo.png" alt="MNHS Logo" class="w-12 h-12">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-4 items-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
+                <img src="../assets/mnhs-logo.png" alt="MNHS Logo" class="w-12 h-12 shrink-0">
                 <p class="text-white text-sm">
                     Mapandan National High School (A.Y 2021-2023) <br> 
                     Senior High School | Track: ICT (Computer Systems Servicing)<br>
                 </p>
             </div>
-            <div class="flex flex-row gap-8 items-center">
-                <img src="../assets/ucu-logo.png" alt="MNHS Logo" class="w-12 h-12">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-4 items-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
+                <img src="../assets/ucu-logo.png" alt="UCU Logo" class="w-12 h-12 shrink-0">
                 <p class="text-white text-sm">
                     Urdaneta City University (A.Y 2023-2028) <br> 
                     Bachelor of Science in Information Technology<br>
@@ -94,29 +175,164 @@
             <h1 class="text-xl font-semibold text-white">Tech Stack</h1>
         </div>
 
-        <div class="grid grid-cols-4 gap-8">
-            <div class="flex flex-row gap-4 items-center">
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 my-8">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-3 items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
                 <img src="../assets/html.png" alt="html logo" class="w-10 h-10">
                 <p class="text-white">HTML</p>             
             </div>
-            <div class="flex flex-row gap-4 items-center">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-3 items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
                 <img src="../assets/css.png" alt="html logo" class="w-10 h-10">
                 <p class="text-white">CSS</p>             
             </div>
-            <div class="flex flex-row gap-4 items-center">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-3 items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
                 <img src="../assets/java-script.png" alt="html logo" class="w-10 h-10">
                 <p class="text-white">JavaScript</p>             
             </div>
-            <div class="flex flex-row gap-4 items-center">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-3 items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
                 <img src="../assets/fluuter2.png" alt="html logo" class="w-10 h-10">
                 <p class="text-white">Flutter</p>             
             </div>
-            <div class="flex flex-row gap-4 items-center">
+            <div class="border border-gray-600 rounded-xl p-4 flex flex-row gap-3 items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-neutral-900 hover:border-white cursor-pointer">
                 <img src="../assets/laravel-brands-solid.png" alt="html logo" class="w-10 h-10">
                 <p class="text-white">Laravel</p>             
             </div>
         </div>
     </section>
+
+    <hr class="w-[75%] mx-auto border-gray-600">
+
+    <section id="projects" class="w-[65%] mx-auto">
+        <div class="flex my-8">
+            <h1 class="text-xl font-semibold text-white">Projects</h1>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- 1. Questifie Card -->
+            <div class="project-card flex flex-col gap-3 p-4 border border-teal-500 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-neutral-900 cursor-pointer group">
+                <!-- Project Image Banner -->
+                <img src="../assets/questifie.jpg" alt="Questifie" class="w-full h-40 rounded-lg border border-gray-600 object-cover object-center group-hover:border-teal-400 transition-colors">
+                
+                <div class="flex items-center justify-between">
+                    <h2 class="text-base font-bold text-white group-hover:text-teal-400 transition-colors">Questifie</h2>
+                    <span class="text-[10px] text-gray-400 bg-neutral-900 border border-gray-700 px-2 py-0.5 rounded-full">Click to view</span>
+                </div>
+                
+                <p class="project-description text-xs text-gray-300 leading-relaxed">
+                    <span class="font-semibold text-white">Description: </span>A to-do list mobile application, helpful for tracking tasks specially for students like me.
+                </p>
+                
+                <!-- Badges Row -->
+                <div class="project-badges flex flex-wrap items-center gap-2 mt-auto pt-2">
+                    <!-- Flutter Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <img src="../assets/fluuter2.png" alt="flutter" class="w-3.5 h-3.5 object-contain">
+                        <span class="text-xs text-white">Flutter</span>
+                    </div>
+                    
+                    <!-- Firebase Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.652 16.538L6.47 5.093a.62.62 0 0 1 1.096-.289l3.056 4.398-5.97 7.336zm14.696 0l-1.819-11.445a.62.62 0 0 0-1.096-.289l-9.057 13.01 10.87-1.118a.62.62 0 0 0 1.102-.158zm-7.922-4.996L9.123 7.55a.62.62 0 0 0-1.157.063L3.81 18.031l7.616-6.489zm.732 1.341l-7.39 6.297a.62.62 0 0 0 .285 1.066l9.839 2.712a.62.62 0 0 0 .685-.308l5.05-9.478-8.469-.289z"/>
+                        </svg>
+                        <span class="text-xs text-white">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. FitPass Mobile Card -->
+            <div class="project-card flex flex-col gap-3 p-4 border border-teal-500 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-neutral-900 cursor-pointer group">
+                <!-- Project Image Banner -->
+                <img src="../assets/fitpass-app.png" alt="FitPass Mobile" class="w-full h-40 rounded-lg border border-gray-600 object-cover object-top group-hover:border-teal-400 transition-colors">
+                
+                <div class="flex items-center justify-between">
+                    <h2 class="text-base font-bold text-white group-hover:text-teal-400 transition-colors">FitPass Mobile</h2>
+                    <span class="text-[10px] text-gray-400 bg-neutral-900 border border-gray-700 px-2 py-0.5 rounded-full">Click to view</span>
+                </div>
+                
+                <p class="project-description text-xs text-gray-300 leading-relaxed">
+                    <span class="font-semibold text-white">Description: </span>Mobile app for those who availed the VIP Membership in the gym. This is focused for the time in and time out for the members of the gym. It uses a QR that will be scanned through our webapp.
+                </p>
+                
+                <!-- Badges Row -->
+                <div class="project-badges flex flex-wrap items-center gap-2 mt-auto pt-2">
+                    <!-- Flutter Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <img src="../assets/fluuter2.png" alt="flutter" class="w-3.5 h-3.5 object-contain">
+                        <span class="text-xs text-white">Flutter</span>
+                    </div>
+                    
+                    <!-- Firebase Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.652 16.538L6.47 5.093a.62.62 0 0 1 1.096-.289l3.056 4.398-5.97 7.336zm14.696 0l-1.819-11.445a.62.62 0 0 0-1.096-.289l-9.057 13.01 10.87-1.118a.62.62 0 0 0 1.102-.158zm-7.922-4.996L9.123 7.55a.62.62 0 0 0-1.157.063L3.81 18.031l7.616-6.489zm.732 1.341l-7.39 6.297a.62.62 0 0 0 .285 1.066l9.839 2.712a.62.62 0 0 0 .685-.308l5.05-9.478-8.469-.289z"/>
+                        </svg>
+                        <span class="text-xs text-white">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. FitPass Web Application Card -->
+            <div class="project-card flex flex-col gap-3 p-4 border border-teal-500 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-neutral-900 cursor-pointer group">
+                <!-- Project Image Banner -->
+                <img src="../assets/fitpass-webapp.png" alt="FitPass Owner and Staff Web Application" class="w-full h-40 rounded-lg border border-gray-600 object-cover object-top group-hover:border-teal-400 transition-colors">
+                
+                <div class="flex items-center justify-between">
+                    <h2 class="text-base font-bold text-white group-hover:text-teal-400 transition-colors">FitPass Owner and Staff Web Application</h2>
+                    <span class="text-[10px] text-gray-400 bg-neutral-900 border border-gray-700 px-2 py-0.5 rounded-full shrink-0 ml-2">Click to view</span>
+                </div>
+                
+                <p class="project-description text-xs text-gray-300 leading-relaxed">
+                    <span class="font-semibold text-white">Description: </span>Web portal for gym owners and staff to scan member QR codes, track daily time-in and time-out attendance, and manage VIP memberships.
+                </p>
+                
+                <!-- Badges Row -->
+                <div class="project-badges flex flex-wrap items-center gap-2 mt-auto pt-2">
+                    <!-- Flutter Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <img src="../assets/fluuter2.png" alt="flutter" class="w-3.5 h-3.5 object-contain">
+                        <span class="text-xs text-white">Flutter</span>
+                    </div>
+                    
+                    <!-- Firebase Badge -->
+                    <div class="flex items-center gap-1.5 border border-gray-600 rounded-full px-2.5 py-1 w-fit bg-neutral-900">
+                        <svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.652 16.538L6.47 5.093a.62.62 0 0 1 1.096-.289l3.056 4.398-5.97 7.336zm14.696 0l-1.819-11.445a.62.62 0 0 0-1.096-.289l-9.057 13.01 10.87-1.118a.62.62 0 0 0 1.102-.158zm-7.922-4.996L9.123 7.55a.62.62 0 0 0-1.157.063L3.81 18.031l7.616-6.489zm.732 1.341l-7.39 6.297a.62.62 0 0 0 .285 1.066l9.839 2.712a.62.62 0 0 0 .685-.308l5.05-9.478-8.469-.289z"/>
+                        </svg>
+                        <span class="text-xs text-white">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Full View Popup Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div id="modal-card" class="relative bg-neutral-950 border border-gray-700 rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-5 sm:p-6 shadow-2xl flex flex-col gap-4 text-white">
+            <!-- Close Button -->
+            <button id="modal-close-btn" aria-label="Close Modal" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-neutral-900 border border-gray-700 hover:border-gray-500 rounded-full w-8 h-8 flex items-center justify-center transition">
+                ✕
+            </button>
+
+            <!-- Full Screenshot Preview -->
+            <div class="w-full flex justify-center bg-black/70 rounded-xl border border-gray-800 p-2.5">
+                <img id="modal-image" src="" alt="Project Full View" class="max-h-[50vh] w-auto max-w-full rounded-lg object-contain shadow-lg">
+            </div>
+
+            <!-- Title & Description -->
+            <div class="flex flex-col gap-1.5">
+                <h3 id="modal-title" class="text-xl font-bold text-white"></h3>
+                <p id="modal-desc" class="text-xs sm:text-sm text-gray-300 leading-relaxed"></p>
+            </div>
+
+            <!-- Technologies Section -->
+            <div class="pt-2 border-t border-gray-800">
+                <p class="text-xs uppercase font-semibold text-gray-400 tracking-wider mb-2">Technologies Used</p>
+                <div id="modal-tech-list" class="flex flex-wrap items-center gap-2">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
