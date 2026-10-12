@@ -16,6 +16,46 @@ links.forEach((link) => {
   link.addEventListener("click", () => setActive(link));
 });
 
+// Hamburger Mobile Menu Logic
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const closeIcon = document.getElementById("close-icon");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+if (hamburgerBtn && mobileMenu) {
+  hamburgerBtn.addEventListener("click", () => {
+    const isHidden = mobileMenu.classList.contains("hidden");
+    if (isHidden) {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.add("flex");
+      if (hamburgerIcon) hamburgerIcon.classList.add("hidden");
+      if (closeIcon) closeIcon.classList.remove("hidden");
+    } else {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+      if (hamburgerIcon) hamburgerIcon.classList.remove("hidden");
+      if (closeIcon) closeIcon.classList.add("hidden");
+    }
+  });
+
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+      if (hamburgerIcon) hamburgerIcon.classList.remove("hidden");
+      if (closeIcon) closeIcon.classList.add("hidden");
+
+      const targetHref = link.getAttribute("href");
+      links.forEach((desktopLink) => {
+        if (desktopLink.getAttribute("href") === targetHref) {
+          setActive(desktopLink);
+        }
+      });
+    });
+  });
+}
+
 // Project Modal Logic
 const projectCards = document.querySelectorAll(".project-card");
 const projectModal = document.getElementById("project-modal");
